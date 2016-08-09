@@ -1,0 +1,298 @@
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  color: #717171;
+}
+
+h1{
+    margin: 0 !important;
+}
+
+header {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header img{
+    width: 300px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul.no-style{
+    list-style-type: none;
+}
+
+.no-padding{
+    padding: 0 !important;
+}
+
+.h-nav{
+    position:fixed;
+    height: 60px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    z-index: 10000;
+    background-color: white;
+    box-shadow: 0px 2px 5px #888888;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.btn-menu{
+    display: none;
+    position: relative;
+    right: 10px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 5px #888888;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.btn-menu div.stripe{
+    width: 30px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.btn-menu div.stripe div{
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 25px;
+    background-color: #171515;
+}
+
+.h-nav-responsive label{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top:5px;  
+    z-index: 99;  
+}
+
+.h-nav ul{
+    float:right;
+    margin: 0;
+    padding: 0;
+}
+
+.h-nav ul li{
+    display: inline-block;   
+}
+
+.h-nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 18px 15px 21px 15px;
+    text-align: center;
+}
+
+
+.h-nav ul li a:hover{
+    background-color: #1B98E0;
+    color: #E8F1F2;
+}
+
+@media screen and (max-width: 760px){
+
+    header h1{
+        font-size: 2em;
+    }
+    .btn-menu{
+        display: inline-block;      
+    }
+
+    .h-nav-responsive ul{
+        display: none;
+        
+    }
+
+    input#menu-toggle:checked ~ ul{
+        position: fixed;
+        right: 0px;
+        display: block;
+        margin-top: 60px;
+        background-color: white;       
+    }
+
+    .h-nav ul li{
+        display: block;   
+    }
+
+    .h-nav ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 18px 15px 21px 15px;
+        text-align: center;
+    }
+
+
+    .h-nav ul li a:hover{
+        background-color: #1B98E0;
+        color: #E8F1F2;
+    }
+}
+
+.content{
+    position: relative;
+    top: 60px;
+
+}
+.content-container{
+    height: 500px;
+    padding-top:60px;
+}
+
+.content-header{
+    text-align: center;
+
+}
+
+
+#home{
+    background-image: url('../images/home-section_sm.jpg');
+}
+
+@media only screen and (min-width: 760px){
+    #home{
+        background-image: url('../images/home-section.jpg');
+    }
+}
+
+
+#home{
+    max-width: 100%;
+    height: auto;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px
+}
+
+#home .content-header h2{
+    text-align: center;
+    color: #E8F1F2;
+    text-shadow:5px 5px 10px black;
+}
+
+#home .content-description{
+    margin-top:30px;
+    color: #ffffff;   
+    background-color: black;
+    opacity: .7;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+#home .content-description p{
+    margin-top:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+#customer{
+    height: auto;
+    padding-bottom: 60px;
+}
+
+#customer .content-header h2{
+    font-size: 3em;
+}
+
+#customer .content-description{
+ 	margin-top: 60px;
+    text-align: center;
+}
+
+#customer .content-description p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#services{
+    background-color: #13293D;    
+    /*background-image: url('../images/architecture-blue-building-business-41170.jpeg');*/
+    /*background-image: url('../images/black-and-white-building.jpg');*/
+    /*background-image: url('../images/meeting-room.jpg');*/
+    /*background-image: url('../images/space-desk-workspace-coworking.jpg');*/
+    /*background-size: cover;*/
+    height: auto;
+    padding-bottom: 60px;
+}
+
+#services .content-header h2{
+    color: #E8F1F2;
+    text-align: center;
+    font-size: 3em;
+}
+
+#services .content-description ul li{
+    margin-top: 50px;
+}
+
+#services .content-description ul li p{
+    text-align: justify;
+    font-size: 1.3em;
+    color: #E8F1F2;
+}
+
+#machinery{
+    height: auto;
+    padding-bottom: 60px;
+}
+
+#machinery .content-header h2{
+    font-size: 3em;
+}
+
+#machinery .content-description{
+ 	margin-top: 60px;
+    text-align: center;
+}
+
+#machinery .content-description p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#contact{
+    background-color: #13293D;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+#contact .content-header h2{
+    color: #E8F1F2;
+    font-size: 3em;
+}
+
+#contact .content-description{
+ 	margin-top: 60px;
+    text-align: center;    
+}
+
+#contact .content-description p{
+    color: #E8F1F2;
+    font-size:1.6em;
+}
+
+#contact .content-description ul li p{
+    font-size: 1.6em;
+}
+
+
