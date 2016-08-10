@@ -5,6 +5,10 @@ body {
   color: #717171;
 }
 
+a{
+    color: #171515;
+}
+
 h1{
     margin: 0 !important;
 }
@@ -102,7 +106,7 @@ ul.no-style{
 
 
 .h-nav ul li a:hover{
-    background-color: #1B98E0;
+    background-color: #171515;
     color: #E8F1F2;
 }
 
@@ -141,7 +145,7 @@ ul.no-style{
 
 
     .h-nav ul li a:hover{
-        background-color: #1B98E0;
+        background-color: #171515;
         color: #E8F1F2;
     }
 }
